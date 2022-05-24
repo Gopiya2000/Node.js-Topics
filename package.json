@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "minimist": "^1.2.6"
   }
 }
