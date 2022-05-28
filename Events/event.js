@@ -7,7 +7,7 @@ eventOb.on('myEvent', () => {
 eventOb.on('close', () => {
     console.log("File closed")
 })
-fs.readFile('exit.js', 'utf8', () => {
+fs.readFile('hello.js', 'utf8', () => {
     eventOb.emit('myEvent')
     eventOb.emit('close')
 })
