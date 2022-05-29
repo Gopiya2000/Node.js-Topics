@@ -1,0 +1,6 @@
+var qs = require('querystring')
+let parse = qs.parse('name=gopiya&age=21')
+let string = qs.stringify({ name: 'gopiya', age: '22' })
+console.log(string)
+let mstring = qs.stringify({ name: 'gopiya', age: '21' },'?',':')
+console.log(mstring)
