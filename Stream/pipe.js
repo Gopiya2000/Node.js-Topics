@@ -1,0 +1,5 @@
+var fs = require('fs')
+var readStream = fs.createReadStream('./random.txt','utf-8')
+var writeStream = fs.createWriteStream('./newfile.txt')
+    readStream.pipe(writeStream)
+    console.log("File is written ...")
