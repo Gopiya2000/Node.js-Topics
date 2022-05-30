@@ -21,15 +21,15 @@ password = '2902';
 // const match = hash1 === hash2;
 
 // console.log(match ? 'good password' : 'password does not match');
-email = 'gopiya@mail.com'
+email = 'ed@mail.com'
 const salt = randomBytes(10).toString('hex');
 console.log("salt : ",salt)
 const hashedPassword = scryptSync(password, salt, 10).toString('hex');
 console.log("hashed pass : ",hashedPassword)
 const user = {email, password: `${salt}:${hashedPassword}` }
-// console.log(user)
-const  users = []
-users.push(user)
-temail = 'gopiya@mail.com'
-const res = users.find(ob => ob.email === temail)
-console.log(res)
+console.log(user)
+// const  users = []
+// users.push(user)
+// temail = 'ed@mail.com'
+// const res = users.find(ob => ob.email === temail)
+// console.log(res)
