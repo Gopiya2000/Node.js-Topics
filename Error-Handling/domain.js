@@ -9,6 +9,7 @@ domain.run(function(){
         console.log(data);
     });
 });
+//only throws error,doesn't handle it.
 domain.on("error",function(error){
     console.log("The exception was caught")
 });

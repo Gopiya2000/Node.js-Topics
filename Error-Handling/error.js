@@ -6,6 +6,7 @@ fs.readFile("data.txt","UTF-8",function(error,data){
     }
     console.log(data);
 });
+//to handle errors.
 process.on("uncaughtException",function(error){
     console.log("The exception was caught")
 });
