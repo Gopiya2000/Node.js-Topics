@@ -20,7 +20,7 @@ else{
 cluster.on('listening',(worker)=>{
 console.log("New Worker : ",worker.process.pid)
 })
-// cluster.on('exit',(worker)=>{
-//     console.log("Worker thread killed",worker.process.pid)
-//     cluster.fork()
-// })
+cluster.on('exit',(worker)=>{
+    console.log("Worker thread killed",worker.process.pid)
+    cluster.fork()
+})
