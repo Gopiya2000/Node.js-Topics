@@ -1,4 +1,3 @@
-//import {Buffer} from "buffer"
 let a = "divya"
 let buf = Buffer.from(a)
 buf.write("Gopiya")
